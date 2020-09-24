@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GGOGO</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<style type="text/css">
+		@font-face{
+			font-family: Inconsolata;
+			src : url('./fonts/Inconsolata.ttf');
+		}
+		@font-face{
+			font-family: Space-mono;
+			src : url('./fonts/SpaceMono-Bold.ttf');
+			font-weight: bold;
+		}
+		@font-face{
+			font-family: Space-mono-regular;
+			src : url('./fonts/SpaceMono-Regular.ttf');
+			font-weight: bold;
+		}
+		@font-face{
+			font-family: Montserrat;
+			src: url('./fonts/Montserrat-SemiBold.ttf');
+		}
+		section{
+			box-sizing: border-box;			
+			display: flex;
+			padding: 0;
+			margin: 0;
+		}
+		.container{
+			display: flex;
+			flex-direction: column;
+		}	
+		.title{
+			font-weight: 700;
+			font-family: Space-mono;
+			font-size: 64px;
+			margin-top: 0;
+			margin-bottom: 32px;
+			width: 586px;
+			padding-top: 202px;
+		}
+		.content{
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		.imagen{
+			display:  inherit;
+			box-sizing: border-box;			
+			justify-content: center;
+		}
+		.message{
+			display: inherit;
+			box-sizing: border-box;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;	
+		}
+		.paragraph{
+			width: 381px;
+			font-weight: normal;
+			font-family: Space-mono-regular;
+			font-size: 24px;
+			letter-spacing: -0.035em;
+			margin-top: 0;
+			margin-bottom: 64px;
+
+		}
+		h1{
+			font-family: Inconsolata;
+			font-size: 24px;
+			font-weight: bold;
+			letter-spacing: -0.08em;
+			padding-left: 77px;
+			padding-top: 40px;
+			margin:0;
+		}
+		.btn{
+			margin:0;
+			padding: 24px 43px 23px 43px; 
+			border: none;
+			color:white;
+			background-color: #333333;
+			font-family: Space-mono;
+			font-size: 14px;
+		}
+		img{
+			width: 539px;
+			height: 447px;			
+			padding-top:202px; 			
+		}
+		.bottom{
+			height: 397px;
+		}
+		footer{
+			text-align: center;
+			font-family: Montserrat;
+		}
+		/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+			.content{
+				flex-direction:column;
+			}
+			img{
+				padding-top: 64px;
+				width: 286px;
+				height: 238px;
+				align-self:  center;
+			}
+			h1{
+				padding-top: 20px;
+				padding-left: 24px;
+			}
+			.title{
+				width: 350px;
+				font-size: 48px;
+				padding-top: 77px;
+			}
+			.paragraph{
+				font-size: 18px;
+				width: 328px;
+			}
+			.bottom{
+				height: 155px;
+			}
+		}
+
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		/*@media only screen and (min-width: 600px) {
+			.content{
+				flex-direction:column;
+			}
+			img{
+				padding-top: 90px;
+			}
+			.title{
+				padding-top: 100px;			
+			}
+		}*/
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<section>
+			<h1>404 NOT FOUND</h1>
+		</section>
+		<section class="content">
+			
+			<img src="src/Scarecrow.png">
+			
+			<div class="message">
+				<p class="title">I have bad news for you</p>
+				
+				<p class="paragraph">The page you are looking for might be removed or is temporarily unvailable</p>
+				<button class="btn">BACK TO HOMEPAGE</button>
+			</div>
+		</section>	
+		<section class="bottom"></section>
+	</div>
+	
+	<footer><span>David @ Devchallenges.io</span></footer>
+
+</body>
+</html>
